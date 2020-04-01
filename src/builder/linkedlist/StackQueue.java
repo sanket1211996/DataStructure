@@ -7,7 +7,6 @@ public class StackQueue {
 	
 	public StackQueue (int size) {
 		this.queue = new Object [size];
-		beginingOfQueue++;
 	}
 	
 	public void loggerln(String msg) {
@@ -24,14 +23,19 @@ public class StackQueue {
 			this.queue[topOfQueue+1] = data;
 			loggerln("Enqueued:" + data.toString());
 			topOfQueue++;
+			if(beginingOfQueue == -1)
+				beginingOfQueue++;
 		}
 	}
 	
-	public void deQueue() {
-		if(beginingOfQueue <= topOfQueue && beginingOfQueue <= queue.length -1) {
+	public void deQueue() {			
+		
+		if(!isEmpty()) {
 			loggerln("Dequeued:" +this.queue[beginingOfQueue].toString());
 			this.queue[beginingOfQueue] = Integer.MIN_VALUE;
 			beginingOfQueue++;
+			if(beginingOfQueue > topOfQueue)
+				beginingOfQueue = topOfQueue = -1; //Reseting Queue
 		}
 		else {
 			loggerln("Queue is Empty.");
@@ -39,7 +43,7 @@ public class StackQueue {
 	}
 	
 	public boolean isEmpty() {
-		if (topOfQueue != queue.length-1) {
+		if (beginingOfQueue == -1) {
 			loggerln("Queue is Empty.");
 			return true;
 		}
