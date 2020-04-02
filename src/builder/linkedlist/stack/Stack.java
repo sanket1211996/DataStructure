@@ -1,8 +1,8 @@
-package builder.linkedlist;
+package builder.linkedlist.stack;
 
 import container.linkedlist.Node;
 
-public class LinkedListArray {
+public class Stack {
 
 	Node stackTop;
     public static int elementCount = -1;
@@ -12,11 +12,11 @@ public class LinkedListArray {
 	}
 
 	public static void incSize() {
-		LinkedListArray.elementCount++;
+		Stack.elementCount++;
 	}
 	
 	public static void decSize() {
-		LinkedListArray.elementCount--;
+		Stack.elementCount--;
 	}
 
 	

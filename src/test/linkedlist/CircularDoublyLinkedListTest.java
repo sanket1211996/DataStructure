@@ -2,7 +2,7 @@ package test.linkedlist;
 
 import builder.linkedlist.CircularDoublyLinkedList;
 
-public class DoublyCircularLinkedListTest {
+public class CircularDoublyLinkedListTest {
 
 	public void run() {
 		CircularDoublyLinkedList  circularDoublyLinkedList = new CircularDoublyLinkedList(1);

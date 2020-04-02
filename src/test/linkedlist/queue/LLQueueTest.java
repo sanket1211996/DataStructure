@@ -1,11 +1,11 @@
-package test.linkedlist;
+package test.linkedlist.queue;
 
-import builder.linkedlist.StackQueue;
+import builder.linkedlist.queue.Queue;
 
-public class StackQueueTest {
+public class LLQueueTest {
 	
 	public void run() {
-		StackQueue stackQueue = new StackQueue(4);
+		Queue stackQueue = new Queue(4);
 		stackQueue.enQueue(1);
 		
 		stackQueue.enQueue(2);

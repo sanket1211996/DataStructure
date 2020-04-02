@@ -1,11 +1,11 @@
-package builder.linkedlist;
+package builder.array.queue;
 
-public class StackQueue {
+public class Queue {
 	private static  int topOfQueue = -1, beginingOfQueue = -1;
 	Object[] queue;
 
 	
-	public StackQueue (int size) {
+	public Queue (int size) {
 		this.queue = new Object [size];
 	}
 	

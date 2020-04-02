@@ -1,10 +1,10 @@
-package test.linkedlist;
+package test.linkedlist.stack;
 
-import builder.linkedlist.LinkedListArray;
+import builder.linkedlist.stack.Stack;
 
-public class LinkedListArrayTest {
+public class StackTest {
 	public void run() {
-		LinkedListArray linkedListArray = new LinkedListArray();
+		Stack linkedListArray = new Stack();
 		linkedListArray.push(1);
 		linkedListArray.peek();
 		

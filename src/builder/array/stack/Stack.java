@@ -1,11 +1,11 @@
-package builder.linkedlist;
+package builder.array.stack;
 
-public class StackArray {
+public class Stack {
 	private static  int stackTop = -1;
 	Object[] stack;
 
 	
-	public StackArray (int size) {
+	public Stack (int size) {
 		createArrayStack(size);
 	}
 	
@@ -19,11 +19,11 @@ public class StackArray {
 	}
 
 	public static void incStackTop() {
-		StackArray.stackTop++;
+		Stack.stackTop++;
 	}
 	
 	public static void decStackTop() {
-		StackArray.stackTop--;
+		Stack.stackTop--;
 	}
 
 	
