@@ -5,28 +5,28 @@ import builder.array.queue.CircularQueue;
 public class CircularQueueTest {
 	
 	public void run() {
-		CircularQueue stackQueue = new CircularQueue(4);
-		stackQueue.enQueue(1);
+		CircularQueue circularQueue = new CircularQueue(4);
+		circularQueue.enQueue(1);
 		
-		stackQueue.enQueue(2);
+		circularQueue.enQueue(2);
 		
-		stackQueue.enQueue(3);
+		circularQueue.enQueue(3);
 		
-		stackQueue.enQueue(4);
+		circularQueue.enQueue(4);
 		
-		stackQueue.enQueue(5);
-		stackQueue.deQueue();
+		circularQueue.enQueue(5);
+		circularQueue.deQueue();
 		
-		stackQueue.enQueue(6);
-		stackQueue.deQueue();
+		circularQueue.enQueue(6);
+		circularQueue.deQueue();
 		
-		stackQueue.enQueue(7);
-		stackQueue.enQueue(8);
-		stackQueue.deQueue();
-		stackQueue.deQueue();
-		stackQueue.deQueue();
-		stackQueue.deQueue();
-		stackQueue.deQueue();
+		circularQueue.enQueue(7);
+		circularQueue.enQueue(8);
+		circularQueue.deQueue();
+		circularQueue.deQueue();
+		circularQueue.deQueue();
+		circularQueue.deQueue();
+		circularQueue.deQueue();
 		
 	}
 }
