@@ -9,6 +9,7 @@ import test.linkedlist.CircularDoublyLinkedListTest;
 import test.linkedlist.CircularSinglyLinkedListTest;
 import test.linkedlist.DoublyLinkedListTest;
 import test.linkedlist.SinglyLinkedListTest;
+import test.linkedlist.btree.BinaryTreeTest;
 import test.linkedlist.queue.LLQueueTest;
 
 public class DSController {
@@ -20,7 +21,7 @@ public class DSController {
 		System.out.println("2. Doubly Linked List Test  3. Circular Doubly Linked List Test");
 		System.out.println("4. Array Stack Test         5. Linked List Stack Test");
 		System.out.println("6. Array Queue Test         7. Array Circular Queue Test");
-		System.out.println("8. LinkedList Queue Test    ");
+		System.out.println("8. LinkedList Queue Test    9. Binary Tree Test");
 		
 		System.out.println("Select the Test to run:");
 		Scanner scanner =  new Scanner(System.in);
@@ -80,6 +81,12 @@ public class DSController {
 			LLQueueTest llQueueTest = new LLQueueTest(); 
 			llQueueTest.run();
 			break;
+		case 9:
+			System.out.println("Binary Tree Test"); 
+			BinaryTreeTest binaryTreeTest = new BinaryTreeTest(); 
+			binaryTreeTest.run();
+			break;
+			
 		default:
 			break;
 		}	 
