@@ -2,6 +2,7 @@ package controller;
 
 import java.util.Scanner;
 
+import test.array.bt.ABinaryTreeTest;
 import test.array.queue.CircularQueueTest;
 import test.array.queue.QueueTest;
 import test.array.stack.StackTest;
@@ -22,6 +23,7 @@ public class DSController {
 		System.out.println("4. Array Stack Test         5. Linked List Stack Test");
 		System.out.println("6. Array Queue Test         7. Array Circular Queue Test");
 		System.out.println("8. LinkedList Queue Test    9. Binary Tree Test");
+		System.out.println("10. Binary Tree Test(Array) ");
 		
 		System.out.println("Select the Test to run:");
 		Scanner scanner =  new Scanner(System.in);
@@ -85,6 +87,12 @@ public class DSController {
 			System.out.println("Binary Tree Test"); 
 			BinaryTreeTest binaryTreeTest = new BinaryTreeTest(); 
 			binaryTreeTest.run();
+			break;
+			
+		case 10:
+			System.out.println("Binary Tree Test(Array)"); 
+			ABinaryTreeTest aBinaryTreeTest = new ABinaryTreeTest(); 
+			aBinaryTreeTest.run();
 			break;
 			
 		default:
